@@ -6,11 +6,10 @@ t = test.result()
 
 foods = t.food()
 
-st.markdown("<h1 style='text-align: center;'>Tasty Foods 🍜</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center;'>Food Recommendation System 😋 </h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Food Recommendation System</h1>", unsafe_allow_html=True)
 
 st.write("-----------------")
-food_choice = st.selectbox("Pick a Food ", foods)
+food_choice = st.selectbox("เลือกเมนูอาหาร ", foods)
 st.write("------------------")
 
 c1, c2, c3 = st.columns(3)
@@ -30,8 +29,8 @@ with c2:
     st.write("Recommends food based on similar users")
     st.write("------------------")
     if m3 == None:
-        st.write("**Less user ratings for this food item !!!**")
-        st.write("So, the recommender cannot pull any recommendations ")
+        st.write("**ข้อมูลการให้คะแนนของผู้ใช้น้อยเกินไป !!!**")
+        st.write("ไม่สามารถแนะนำเมนูอาหารได้ ระบบจะรวบรวมข้อมูลเมื่อข้อมูลการให้คะแนนของลูกค้า มีการอัพเดต")
     else:
         for index, ele in enumerate(m3):
             st.write(index, ele.title())
