@@ -18,7 +18,7 @@ m1, m2, m3 = t.query(food_choice)
 
 with c1:
     st.subheader("Simple Content Based Filtering")
-    st.write("Recommends food based on similar foods")
+    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากอาหารที่มีความคล้ายคลึงกัน")
     st.write("------------------")
     for index, ele in enumerate(m1):
         st.write(index,ele.title())
@@ -26,7 +26,7 @@ with c1:
 
 with c2:
     st.subheader("Collaborative Based Filtering")
-    st.write("Recommends food based on similar users")
+    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากผู้ใช้ที่มีความชอบคล้ายกัน")
     st.write("------------------")
     if m3 == None:
         st.write("**ข้อมูลการให้คะแนนของผู้ใช้น้อยเกินไป !!!**")
@@ -39,7 +39,7 @@ with c2:
 
 with c3:
     st.subheader("Advanced Content Based Filtering")
-    st.write("Recommends food based on similar foods and its features")
+    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากเมนูอาหารที่คล้ายกัน และคุณลักษณะของอาหารนั้นๆ (ประเภทอาหาร วัตถุดิบ ส่วนผสม)")
     st.write("------------------")
     for index, ele in enumerate(m2):
         st.write(index, ele.title())
