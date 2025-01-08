@@ -1,0 +1,8 @@
+streamlit
+sib_api_v3_sdk
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
