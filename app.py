@@ -18,7 +18,7 @@ m1, m2, m3 = t.query(food_choice)
 
 with c1:
     st.subheader("Simple Content Based Filtering")
-    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากอาหารที่มีความคล้ายคลึงกัน")
+    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากชื่อเมนูอาหารที่มีความคล้ายคลึงกัน")
     st.write("------------------")
     for index, ele in enumerate(m1):
         st.write(index,ele.title())
@@ -39,7 +39,7 @@ with c2:
 
 with c3:
     st.subheader("Advanced Content Based Filtering")
-    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากเมนูอาหารที่คล้ายกัน และคุณลักษณะของอาหารนั้นๆ (ประเภทอาหาร วัตถุดิบ ส่วนผสม)")
+    st.write("แนะนำเมนูอาหาร โดยอ้างอิงจากชื่อเมนูอาหารที่คล้ายกัน และคุณลักษณะของอาหารนั้นๆ (ประเภทอาหาร วัตถุดิบ ส่วนผสม)")
     st.write("------------------")
     for index, ele in enumerate(m2):
         st.write(index, ele.title())
